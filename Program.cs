@@ -87,7 +87,7 @@ namespace Labb_4___Collection_Generics
             empList.Add(em5);
 
             //Kolla ifall listan innehåller employee 4
-            if (empList.Contains(em3)
+            if (empList.Contains(em3))
             {
                 Console.WriteLine($"Employee 4 finns i listan, det är {em4._name}");
             }
@@ -111,9 +111,9 @@ namespace Labb_4___Collection_Generics
             if (findAllMales.Count > 0)
             {
                 Console.WriteLine("All male employees found!");
-                foreach (var maleemployee in empList)
+                foreach (var maleemployee in findAllMales)
                 {
-                    Console.WriteLine($"\nMale employee found....ID: {findMale._id}, Name: {findMale._name}, Gender: {findMale._gender}, Salary: {findMale._salary}");
+                    Console.WriteLine($"\nMale employee found....ID: {maleemployee._id}, Name: {maleemployee._name}, Gender: {maleemployee._gender}, Salary: {maleemployee._salary}");
                 }
             }
             else
